@@ -1,0 +1,17 @@
+.field{
+    height: 80px; 
+    width:80px;
+    display:inline-block;
+    border:black 1px solid;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: -4px;
+}
+
+.img{
+    height: 79px;
+    width: 79px;
+    margin-bottom: -4px;
+    box-sizing: border-box;
+    position: relative;
+}
