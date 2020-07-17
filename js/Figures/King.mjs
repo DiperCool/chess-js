@@ -291,7 +291,8 @@ export class King extends Figure{
             if(this.fieldAttack(6,ySide)||this.fieldAttack(5,ySide)){
                 return false;
             }
-
+            rook.coord={x:5,y:ySide}
+            this.coord={x:6, y:ySide}
             this.field.Field[ySide][5].Figure=rook;
             this.field.Field[ySide][7].Figure=null;
             this.field.Field[ySide][4].Figure=null;
@@ -332,7 +333,8 @@ export class King extends Figure{
             if(this.fieldAttack(3,ySide)||this.fieldAttack(2,ySide)||this.fieldAttack(1,ySide)){
                 return false;
             }
-
+            rook.coord={x:3,y:ySide}
+            this.coord={x:2, y:ySide}
             this.field.Field[ySide][3].Figure=rook;
             this.field.Field[ySide][0].Figure=null;
             this.field.Field[ySide][4].Figure=null;
