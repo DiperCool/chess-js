@@ -91,12 +91,13 @@ export class GameField{
 					img.setAttribute("data-x",j);
 					img.setAttribute("data-y",i);
 					img.setAttribute("src", this.Field[i][j].Figure.img);
-					img.setAttribute("class", "img")
+					img.setAttribute("class", `img ${this.hod==="white"?null:"rotated"}`)
 					div.appendChild(img);
 				}
 
-
+				document.getElementById("d").setAttribute("class", this.hod==="white"?null:"rotated")
 				document.getElementById("d").appendChild(div);
+				
 			}
 		}
 

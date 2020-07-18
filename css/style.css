@@ -15,3 +15,7 @@
     box-sizing: border-box;
     position: relative;
 }
+
+.rotated{
+    transform: rotate(180deg);
+}
